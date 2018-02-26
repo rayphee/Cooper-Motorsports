@@ -3,7 +3,7 @@
 html, body {
     height: 100%;
     margin: 0pt;
-    font: 1.0125em futura pt;
+    font: 1.0125em futura-pt;
 }
 .mobile{
 	display:initial;
@@ -61,19 +61,22 @@ video{
   margin-bottom: 4px;
 }
 h1{
-  font: 3vw futura pt Bold;
+  font: 3vw futura-pt;
+  font-weight: bold;
   /* letter-spacing: -.12em; */
   position: relative;
   margin-left: 3.75vw;
 }
 h2{
-  font: 2vw futura pt Bold;
+  font: 3vw futura-pt;
+  font-weight: bold;
   /* letter-spacing: -.12em; */
   position: relative;
   margin-left: 3.75vw;
 }
 .emphasis{
-  font: 2vw futura pt Bold;
+  font: 3vw futura-pt;
+  font-weight: bold;
   /* letter-spacing: -.12em; */
   position: block;
 }
@@ -86,7 +89,8 @@ h2{
   width: 30vw;
 }
 #motorsports-type{
-  font: 3.75vw futura pt Bold;
+  font: 3.9vw futura-pt;
+  font-weight: bold;
   /* letter-spacing: -.12em; */
   line-height: .85;
   color: white;
@@ -182,7 +186,7 @@ h2{
   z-index: 100;
 }
 .stroke{
-  font: futura pt;
+  font: futura-pt;
   font-style: italic;
   font-weight:500;
   font-size: 3vw;

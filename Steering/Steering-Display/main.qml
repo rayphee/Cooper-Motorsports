@@ -74,7 +74,7 @@ Window {
 
         Image {
             id: dashMask
-            visible: true
+            visible: false
             anchors.verticalCenter: parent.verticalCenter
             anchors.horizontalCenter: parent.horizontalCenter
             source: "DashMask.png"
