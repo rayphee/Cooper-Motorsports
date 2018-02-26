@@ -3,7 +3,7 @@
 html, body {
     height: 100%;
     margin: 0pt;
-    font: 1.0125em Helvetica Neue;
+    font: 1.0125em futura pt;
 }
 .mobile{
 	display:initial;
@@ -43,7 +43,7 @@ video{
   transition: 1s opacity;
 }
 .color-band{
-  height: 3vh;
+  height: 1vw;
   position: relative;
   background: linear-gradient(to right,
     #F9D31A 20%,
@@ -58,40 +58,43 @@ video{
     #007E1A 90%,
     #007E1A);
   top:0px;
+  margin-bottom: 4px;
 }
 h1{
-  font: 3vw Arial Black;
-  letter-spacing: -.12em;
+  font: 3vw futura pt Bold;
+  /* letter-spacing: -.12em; */
   position: relative;
   margin-left: 3.75vw;
 }
 h2{
-  font: 2vw Arial Black;
-  letter-spacing: -.12em;
+  font: 2vw futura pt Bold;
+  /* letter-spacing: -.12em; */
   position: relative;
   margin-left: 3.75vw;
 }
 .emphasis{
-  font: 2vw Arial Black;
-  letter-spacing: -.12em;
+  font: 2vw futura pt Bold;
+  /* letter-spacing: -.12em; */
   position: block;
 }
 #typographic-logo{
   margin-left: 3.75vw;
   margin-top: 80vh;
-  width: 27.8vw;
+  width: 30vw;
 }
 #typographic-logo .color-band{
-  width: 27.3vw;
+  width: 30vw;
 }
 #motorsports-type{
-  font: 3.75vw Arial Black;
-  letter-spacing: -.12em;
+  font: 3.75vw futura pt Bold;
+  /* letter-spacing: -.12em; */
   line-height: .85;
   color: white;
 }
 .centered{
   text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .justified{
   text-align: justify;
@@ -99,6 +102,20 @@ h2{
 .pane{
   overflow: hidden;
   height: 100vh;
+  width: 100vw;
+  position: relative;
+  margin-top:0;
+}
+.fourth-pane{
+  overflow: visible;
+  min-height: 25vh;
+  width: 100vw;
+  position: relative;
+  margin-top:0;
+}
+.threefourth-pane{
+  overflow: hidden;
+  height: 75vh;
   width: 100vw;
   position: relative;
   margin-top:0;
@@ -124,6 +141,9 @@ h2{
   margin-left: auto;
   margin-right: auto;
   z-index: 100;
+}
+.content *{
+  display: block;
 }
 .background-image-container{
   position: absolute;
@@ -154,13 +174,21 @@ h2{
 }
 .background-image-absolute{
   position: absolute;
-  height: 50vh;
+  height: 100vh;
   z-index: -100;
 }
-.translucent-text{
+.body-text{
   padding: 50px;
-  background-color: rgba(255, 255, 255, 0.875);
   z-index: 100;
+}
+.stroke{
+  font: futura pt;
+  font-style: italic;
+  font-weight:500;
+  font-size: 3vw;
+  /* -webkit-text-stroke-width: 2px; */
+  /* -webkit-text-stroke-color: white; */
+  color: white;
 }
 #intro{
   background-color: rgba(0,0,0,.55);
@@ -171,21 +199,21 @@ h2{
   background-color: white;
   color: black;
 }
-#philosophy{
-  background-color: #F9D31A;
+#vision{
+  background-color: #000000;
+  color: white;
 }
 #get-involved{
   background-color: #0198F1;
   color: white;
 }
 #tune{
-  background-color: #15152A;
-  color: #F9D31A;
+  background-color: #000000;
+  color: white;
 }
 #body-iso-1{
-  top: 10vh;
-  left: 10vw;
-  height: 100vh;
+  top: -10vh;
+  position: relative;
 }
 @media screen and (min-width: 800px) {
   .mobile{
